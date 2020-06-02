@@ -1,5 +1,5 @@
 //%  color=#008080  blockGap=8
-namespace WeCodeMakeCode {
+namespace polygom {
 
     //% block="create polygon with %n_sides sides radius %radius || color %color angle %angle"
     //% blockSetVariable=myPolygon
