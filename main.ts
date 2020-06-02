@@ -30,7 +30,7 @@ class Polygon {
     //% blockSetVariable="myPolygon"
     //% blockCombine block="sides"
     set sides(value: number) {
-        this._n_sides = Math.min(Math.max(value, 30), 3);
+        this._n_sides = Math.min(Math.max(value, 0), 30);
         this.draw_polygon();
     }
     //% blockSetVariable="myPolygon"
@@ -46,7 +46,7 @@ class Polygon {
     //% blockSetVariable="myPolygon"
     //% blockCombine block="color"
     set color(value: number) {
-        this._color = Math.min(Math.max(value, 15), 1);
+        this._color = Math.min(Math.max(value, 1), 15);
         this.draw_polygon();
     }
     //% blockSetVariable="myPolygon"
@@ -57,7 +57,7 @@ class Polygon {
     //% blockSetVariable="myPolygon"
     //% blockCombine block="starting angle (degrees)"
     set angle(value: number) {
-        this._color = Math.min(Math.max(value, 36015), 0);
+        this._color = Math.min(Math.max(value, 0), 360);
         this.draw_polygon();
     }
     constructor(n_sides: number, radius: number, color: number, starting_angle_degrees: number = 0) {
