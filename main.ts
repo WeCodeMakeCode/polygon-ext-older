@@ -1,4 +1,4 @@
-//%  color=#008080  blockGap=8
+//%  weight=100 color color=#008080  blockGap=8
 namespace polygom {
 
     //% block="create polygon with %n_sides sides radius %radius || color %color angle %angle"
@@ -13,7 +13,7 @@ namespace polygom {
         return new Polygon(n_sides, radius, color, angle);
     }
 }
-//% blockNamespace=WeCodeMakeCode color="#008080" blockGap=8blockGap=8
+//% blockNamespace=polygon color="#008080" blockGap=8blockGap=8
 class Polygon {
     private _polygon: Sprite = null
     private _img: Image = null;
