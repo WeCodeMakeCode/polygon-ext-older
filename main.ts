@@ -1,5 +1,5 @@
 //%  weight=100 color color=#008080  blockGap=8
-namespace polygom {
+namespace polygon {
 
     //% block="create polygon with %n_sides sides radius %radius || color %color angle %angle"
     //% blockSetVariable=myPolygon
