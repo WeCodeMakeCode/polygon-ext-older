@@ -60,7 +60,7 @@ class Polygon {
         this._angle = Math.min(Math.max(value, 0), 360);
         this.draw_polygon();
     }
-    constructor(n_sides: number, radius: number, color: number, starting_angle_degrees: number = 0) {
+    constructor(n_sides: number, radius: number, color: number, starting_angle_degrees: number) {
         this._n_sides = n_sides;
         this._radius = radius;
         this._color = color;
