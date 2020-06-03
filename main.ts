@@ -57,7 +57,7 @@ class Polygon {
     //% blockSetVariable="myPolygon"
     //% blockCombine block="starting angle (degrees)"
     set angle(value: number) {
-        this._color = Math.min(Math.max(value, 0), 360);
+        this._angle = Math.min(Math.max(value, 0), 360);
         this.draw_polygon();
     }
     constructor(n_sides: number, radius: number, color: number, starting_angle_degrees: number = 0) {
