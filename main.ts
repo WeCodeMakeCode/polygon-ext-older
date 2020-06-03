@@ -30,7 +30,7 @@ class Polygon {
     //% blockSetVariable="myPolygon"
     //% blockCombine block="sides"
     set sides(value: number) {
-        this._n_sides = Math.min(Math.max(value, 0), 30);
+        this._n_sides = Math.min(Math.max(value, 3), 30);
         this.draw_polygon();
     }
     //% blockSetVariable="myPolygon"
