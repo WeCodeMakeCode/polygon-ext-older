@@ -60,6 +60,11 @@ class Polygon {
         this._angle = Math.min(Math.max(value, 0), 360);
         this.draw_polygon();
     }
+    //% blockSetVariable="myPolygon"
+    //% blockCombine block="sprite"
+    get sprite(): Sprite {
+        return this._polygon;
+    }
     constructor(n_sides: number, radius: number, color: number, starting_angle_degrees: number) {
         this._n_sides = n_sides;
         this._radius = radius;
